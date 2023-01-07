@@ -1,0 +1,41 @@
+.headline {
+  margin-left: 300px;
+}
+header{
+ width: 100%;
+  height: 50px;
+ background-color: #213240;
+ }
+.logo {
+  margin-left: 10px;
+  color: white;
+  font-size: 15px;
+}
+.sidebar {
+  padding: 0;
+  width: 200px;
+  background-color: #133042;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Боковой панели ссылок */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Активная/текущая ссылка */
+.sidebar a.active {
+  background-color: #2d7585;
+  color: white;
+}
+
+/* Наведение */
+.sidebar a:hover:not(.active) {
+  background-color: #415666;
+  color: white;
+}
