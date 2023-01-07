@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from extra_app.views import index_page, demand_page
+from extra_app.views import index_page, demand_page, geography_page, skills_page, latest_vacancies_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page),
     path('demand/', demand_page),
+    path('geography/', geography_page),
+    path('skills/', skills_page),
+    path('latest_vacancies/', latest_vacancies_page),
 ]
