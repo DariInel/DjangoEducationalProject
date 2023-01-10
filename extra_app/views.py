@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
 
-from .models import DataFullstack
+from .models import DataFullstack, SalaryLevel
 
 
 def index_page(request):
@@ -27,3 +27,8 @@ def latest_vacancies_page(request):
 def get_table_fullstack(request):
     profession = DataFullstack.objects.all()
     return render(request, "demand_page.html", {"profession": profession})
+
+
+def get_salary_level(request):
+    cities = SalaryLevel.objects.all()
+    return render(request, "geography.html", {"cities": cities})

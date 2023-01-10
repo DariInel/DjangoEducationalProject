@@ -17,13 +17,28 @@
 tr:hover td{
     background: #1f2833;
 }
+th{
+  background-color: #1f2833;
+  text-align: left;
+}
 table{
-  right: 30px;
+  text-align: left;
   position: absolute;
+  border-collapse: collapse;
   z-index: 1;
-  left: 230px;
-  top: 120px;
-  color: #66fcf1;
+  top: 70px;
+  height: 500px;
+  width: 1100px;
+  background-color: #0b0c10;
+  left: 280px;
+  color: #45a29e;
+  border-color: #111b24;
+}
+caption {
+   caption-side: top;
+   text-align: left;
+   padding: 20px 0;
+   font-size: 20px;
 }
 body{
 
@@ -85,4 +100,24 @@ footer{
 .sidebar a:hover:not(.active) {
   background-color: #34414a;
   color: white;
+}
+.pic {
+  position: absolute;
+  height: 300px;
+  left: 440px;
+  top: 740px;
+  border: 3px solid #ffae6d;
+}
+
+img {
+	filter: hue-rotate(137deg);
+}
+
+.line {
+  position: absolute;
+  background-color: #0b0c10;
+  height: 40px;
+  width: 100%;
+  left: 200px;
+  top: 1070px;
 }

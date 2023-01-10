@@ -15,3 +15,15 @@ class DataFullstack(models.Model):
     class Meta:
         verbose_name = 'Статистика по профессии'
         verbose_name_plural = 'Статистики по профессии'
+
+
+class SalaryLevel(models.Model):
+    city = models.CharField('Город', max_length=15)
+    level_salary = models.CharField('Уровень зарплат', max_length=8)
+
+    def str(self):
+        return str(self.city)
+
+    class Meta:
+        verbose_name = 'Статистика по уровню зарплат'
+        verbose_name_plural = 'Статистика по уровню зарплат'

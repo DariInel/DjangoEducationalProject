@@ -97,7 +97,7 @@ footer{
   top: 50px;
 }
 .image img {
-	filter: brightness(50%)
+	filter: brightness(50%);
 }
 .pic{
   position: absolute;
