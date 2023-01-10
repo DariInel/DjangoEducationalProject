@@ -19,6 +19,19 @@
             <a href="http://127.0.0.1:8000/skills/">Навыки</a>
             <a href="http://127.0.0.1:8000/latest_vacancies/">Последние вакансии</a>
         </div>
+        <h1 class = "name">Востребованность</h1>
+        <table border="2" cellpadding="2.5px" align="center">
+        <thead><th>Год</th><th>Средняя зарплата</th><th>Средняя зарплата - Fullstack-программист</th><th>Количество вакансий</th><th>Количество вакансий - Fullstack-программист</th></thead>
+        {% for i in profession %}
+            <tr>
+                <td>{{ i.year }}</td>
+                <td>{{ i.average_salary }}</td>
+                <td>{{ i.profession_average_salary }}</td>
+                <td>{{ i.vacancy_count }}</td>
+                <td>{{ i.profession_vacancy_count }}</td>
+            </tr>
+        {% endfor %}
+        </table>
     </main>
     <footer>
         <h1 class="logo">Ахметгареева Дарья Александровна   РИ-210944</h1>

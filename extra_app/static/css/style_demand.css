@@ -7,14 +7,36 @@
   left: 0;
   top: 50px;
 }
+.name{
+  position: absolute;
+  color: #66fcf1;
+  left: 250px;
+  top: 60px;
+}
+
+tr:hover td{
+    background: #1f2833;
+}
+table{
+  right: 30px;
+  position: absolute;
+  z-index: 1;
+  left: 230px;
+  top: 120px;
+  color: #66fcf1;
+}
 body{
+
   background: #0b0c10;
   color: #66fcf1;
   font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
 }
+main{
+  bottom: 0;
+}
 header{
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   left: 0;
   top: 0;
@@ -24,6 +46,7 @@ header{
 footer{
   position:fixed;
   overflow: hidden;
+  z-index: 1;
   left: 0;
   bottom: 0;
   width: 100%;
