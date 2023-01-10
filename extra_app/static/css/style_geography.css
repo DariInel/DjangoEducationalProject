@@ -12,6 +12,32 @@ body{
   color: #66fcf1;
   font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
 }
+tr:hover td{
+    background: #1f2833;
+}
+th{
+  background-color: #1f2833;
+  text-align: left;
+}
+table{
+  text-align: left;
+  position: absolute;
+  border-collapse: collapse;
+  z-index: 1;
+  top: 70px;
+  height: 400px;
+  width: 600px;
+  background-color: #0b0c10;
+  left: 280px;
+  color: #45a29e;
+  border-color: #111b24;
+}
+caption {
+   caption-side: top;
+   text-align: left;
+   padding: 20px 0;
+   font-size: 20px;
+}
 header{
   position: fixed;
   z-index: 1;
@@ -62,4 +88,25 @@ footer{
 .sidebar a:hover:not(.active) {
   background-color: #34414a;
   color: white;
+}
+
+.pic {
+  position: absolute;
+  height: 300px;
+  left: 440px;
+  top: 640px;
+  border: 3px solid #2279af;
+}
+
+img {
+	filter: hue-rotate(-26deg);
+}
+
+.line {
+  position: absolute;
+  background-color: #0b0c10;
+  height: 40px;
+  width: 100%;
+  left: 200px;
+  top: 970px;
 }
