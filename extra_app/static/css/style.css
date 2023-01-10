@@ -96,6 +96,9 @@ footer{
   z-index: -1;
   top: 50px;
 }
+.image img {
+	filter: brightness(50%)
+}
 .pic{
   position: absolute;
   height: 300px;
