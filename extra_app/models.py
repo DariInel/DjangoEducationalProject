@@ -27,3 +27,15 @@ class SalaryLevel(models.Model):
     class Meta:
         verbose_name = 'Статистика по уровню зарплат'
         verbose_name_plural = 'Статистика по уровню зарплат'
+
+
+class SalaryPart(models.Model):
+    city = models.CharField('Город', max_length=15)
+    part_salary = models.CharField('Уровень зарплат', max_length=8)
+
+    def str(self):
+        return str(self.city)
+
+    class Meta:
+        verbose_name = 'Статистика по доле вакансий'
+        verbose_name_plural = 'Статистика по доле вакансий'

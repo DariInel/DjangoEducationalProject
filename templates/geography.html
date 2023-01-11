@@ -19,13 +19,23 @@
             <a href="http://127.0.0.1:8000/skills/">Навыки</a>
             <a href="http://127.0.0.1:8000/latest_vacancies/">Последние вакансии</a>
         </div>
-        <table border="2" cellpadding="2px" align="left">
+        <table class = "left_table" border="2" cellpadding="2px" align="left">
         <caption>Уровень зарплат по городам</caption>
         <thead><th>Город</th><th>Уровень зарплат</th></thead>
         {% for i in cities %}
             <tr>
                 <td>{{ i.city }}</td>
                 <td>{{ i.level_salary }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        <table class = "right_table" border="2" cellpadding="2px" align="left">
+        <caption>Доля вакансий по городам</caption>
+        <thead><th>Город</th><th>Доля вакансий</th></thead>
+        {% for part in parts %}
+            <tr>
+                <td>{{ part.city }}</td>
+                <td>{{ part.part_salary }}</td>
             </tr>
         {% endfor %}
         </table>

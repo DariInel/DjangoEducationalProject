@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
 
-from .models import DataFullstack, SalaryLevel
+from .models import DataFullstack, SalaryLevel, SalaryPart
 
 
 def index_page(request):
@@ -32,3 +32,20 @@ def get_table_fullstack(request):
 def get_salary_level(request):
     cities = SalaryLevel.objects.all()
     return render(request, "geography.html", {"cities": cities})
+
+
+def get_salary_part(request):
+    parts = SalaryPart.objects.all()
+    return render(request, "geography.html", {"parts": parts})
+
+
+def get_salary(request):
+    cities = SalaryLevel.objects.all()
+    parts = SalaryPart.objects.all()
+
+    response_data = {
+        "cities": cities,
+        "parts": parts,
+    }
+
+    return render(request, 'geography.html', response_data)
