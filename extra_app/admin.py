@@ -3,7 +3,7 @@ from import_export import resources
 from django.contrib import admin
 from import_export.admin import ImportExportActionModelAdmin
 
-from extra_app.models import DataFullstack, SalaryLevel, SalaryPart
+from extra_app.models import DataFullstack, SalaryLevel, SalaryPart, TopSkills
 
 
 # Register your models here.
@@ -45,3 +45,16 @@ class SalaryPartAdmin(ImportExportActionModelAdmin):
 
 
 admin.site.register(SalaryPart, SalaryPartAdmin)
+
+
+class TopSkillsResource(resources.ModelResource):
+    class Meta:
+        model = TopSkills
+
+
+class TopSkillsAdmin(ImportExportActionModelAdmin):
+    resource_class = TopSkillsResource
+    list_display = [field.name for field in TopSkills._meta.fields if field.name != 'id']
+
+
+admin.site.register(TopSkills, TopSkillsAdmin)

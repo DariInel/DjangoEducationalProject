@@ -1,0 +1,65 @@
+.line {
+  position: absolute;
+  background-color: #1f2833;
+  color: #1f2833;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  top: 50px;
+}
+body{
+  background: #0b0c10;
+  color: #66fcf1;
+  font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+}
+header{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 50px;
+  background-color: #0b0c10;
+ }
+footer{
+  position:fixed;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+ background-color: #213240;
+ }
+.logo {
+  margin-left: 10px;
+  color: white;
+  font-size: 15px;
+}
+.sidebar {
+  width: 200px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background-color: #1f2833;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+  padding: 22px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #45a29e;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #34414a;
+  color: white;
+}

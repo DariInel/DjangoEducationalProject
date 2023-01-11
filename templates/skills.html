@@ -19,6 +19,16 @@
             <a class="active" href="http://127.0.0.1:8000/skills/">Навыки</a>
             <a href="http://127.0.0.1:8000/latest_vacancies/">Последние вакансии</a>
         </div>
+        <table border="2" cellpadding="2.5px" align="left">
+        <caption>Топ-10 навыков по годам</caption>
+        <thead><th>Год</th><th>Топ-10 навыков</th></thead>
+        {% for i in skills %}
+            <tr>
+                <td>{{ i.year }}</td>
+                <td>{{ i.list_skills }}</td>
+            </tr>
+        {% endfor %}
+        </table>
     </main>
     <footer>
         <h1 class="logo">Ахметгареева Дарья Александровна   РИ-210944</h1>
