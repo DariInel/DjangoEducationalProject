@@ -1,3 +1,6 @@
+html{
+  overflow-x: hidden;
+}
 .line {
   position: absolute;
   background-color: #1f2833;
@@ -6,6 +9,12 @@
   width: 100%;
   left: 0;
   top: 50px;
+}
+.logo_img{
+  position: absolute;
+  width: 130px;
+  left: 29px;
+  top: 9px;
 }
 body{
   background: #0b0c10;
