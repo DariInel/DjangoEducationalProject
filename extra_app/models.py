@@ -14,7 +14,7 @@ class DataFullstack(models.Model):
 
     class Meta:
         verbose_name = 'Статистика по профессии'
-        verbose_name_plural = 'Статистики по профессии'
+        verbose_name_plural = 'Статистик по профессии'
 
 
 class SalaryLevel(models.Model):
@@ -26,7 +26,7 @@ class SalaryLevel(models.Model):
 
     class Meta:
         verbose_name = 'Статистика по уровню зарплат'
-        verbose_name_plural = 'Статистика по уровню зарплат'
+        verbose_name_plural = 'Статистик по уровню зарплат'
 
 
 class SalaryPart(models.Model):
@@ -38,4 +38,16 @@ class SalaryPart(models.Model):
 
     class Meta:
         verbose_name = 'Статистика по доле вакансий'
-        verbose_name_plural = 'Статистика по доле вакансий'
+        verbose_name_plural = 'Статистик по доле вакансий'
+
+
+class TopSkills(models.Model):
+    year = models.CharField('Год', max_length=15)
+    list_skills = models.CharField('Топ-10 навыков', max_length=150)
+
+    def str(self):
+        return str(self.year)
+
+    class Meta:
+        verbose_name = 'Топ-10 навыков'
+        verbose_name_plural = 'Топ-10 навыков по годам'

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
 
-from .models import DataFullstack, SalaryLevel, SalaryPart
+from .models import DataFullstack, SalaryLevel, SalaryPart, TopSkills
 
 
 def index_page(request):
@@ -49,3 +49,8 @@ def get_salary(request):
     }
 
     return render(request, 'geography.html', response_data)
+
+
+def get_top_skills(request):
+    skills = TopSkills.objects.all()
+    return render(request, "skills.html", {"skills": skills})

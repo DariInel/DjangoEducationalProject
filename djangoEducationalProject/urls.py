@@ -25,6 +25,7 @@ urlpatterns = [
     path('demand/', demand_page),
     path('geography/', views.get_salary),
     path('geography/', geography_page),
+    path('skills/', views.get_top_skills),
     path('skills/', skills_page),
     path('latest_vacancies/', latest_vacancies_page),
 ]
