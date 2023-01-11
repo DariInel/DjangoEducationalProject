@@ -1,3 +1,6 @@
+html{
+  overflow-x: hidden;
+}
 .headline {
   position: absolute;
   text-shadow: 0px 0px 1px black;
@@ -19,10 +22,31 @@
   position: absolute;
   text-shadow: 0px 0px 1px black;
   font-size: 14px;
-  color: white;
+  color: #45a29e;
   top: 780px;
   right: 240px;
   left: 800px;
+}
+.plus {
+  position: absolute;
+  text-shadow: 0px 0px 1px black;
+  font-size: 14px;
+  color: #45a29e;
+  top: 1180px;
+  width: 350px;
+  left: 350px;
+}
+.minus {
+  position: absolute;
+  text-shadow: 0px 0px 1px black;
+  font-size: 14px;
+  color: #45a29e;
+  top: 1180px;
+  width: 350px;
+  left: 850px;
+}
+.name{
+  color: white;
 }
 .line {
   position: absolute;
@@ -32,6 +56,40 @@
   width: 100%;
   left: 0;
   top: 50px;
+}
+li{
+  padding: 9px;
+  list-style-type: square;
+}
+.logo_img{
+  position: absolute;
+  width: 130px;
+  left: 29px;
+  top: 9px;
+}
+.limit_1 {
+  position: absolute;
+  background-color: white;
+  top: -10px;
+  color: white;
+  height: 2px;
+  width: 350px;
+}
+.limit_2 {
+  position: absolute;
+  background-color: white;
+  bottom: -35px;
+  color: white;
+  height: 2px;
+  width: 350px;
+}
+.end_limit {
+  position: absolute;
+  background-color: #0b0c10;
+  height: 40px;
+  width: 100%;
+  left: 200px;
+  top: 2000px;
 }
 body{
   background: #0b0c10;
