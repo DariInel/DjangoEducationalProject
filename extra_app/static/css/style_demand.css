@@ -1,8 +1,9 @@
 html{
   overflow-x: hidden;
 }
-.line {
+.line_limit_header {
   position: absolute;
+  z-index: 1;
   background-color: #1f2833;
   color: #1f2833;
   height: 3px;
