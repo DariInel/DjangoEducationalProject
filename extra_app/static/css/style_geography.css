@@ -26,9 +26,8 @@ table{
   z-index: 1;
   top: 70px;
   height: 400px;
-  width: 600px;
+  width: 500px;
   background-color: #0b0c10;
-  left: 280px;
   color: #45a29e;
   border-color: #111b24;
 }
@@ -101,7 +100,13 @@ footer{
 img {
 	filter: hue-rotate(-26deg);
 }
+.right_table{
+  left: 850px;
+}
 
+.left_table{
+  left: 280px;
+}
 .line {
   position: absolute;
   background-color: #0b0c10;

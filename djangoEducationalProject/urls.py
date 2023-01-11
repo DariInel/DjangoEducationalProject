@@ -23,7 +23,7 @@ urlpatterns = [
     path('', index_page),
     path('demand/', views.get_table_fullstack),
     path('demand/', demand_page),
-    path('geography/', views.get_salary_level),
+    path('geography/', views.get_salary),
     path('geography/', geography_page),
     path('skills/', skills_page),
     path('latest_vacancies/', latest_vacancies_page),
