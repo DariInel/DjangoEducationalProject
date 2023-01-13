@@ -3,7 +3,7 @@ from import_export import resources
 from django.contrib import admin
 from import_export.admin import ImportExportActionModelAdmin
 
-from extra_app.models import DataFullstack, SalaryLevel, SalaryPart, TopSkills
+from extra_app.models import DataFullstack, SalaryLevel, SalaryPart, TopSkills2015, TopSkills2016, TopSkills2017, TopSkills2018, TopSkills2019, TopSkills2020, TopSkills2021, TopSkills2022
 
 
 # Register your models here.
@@ -47,14 +47,105 @@ class SalaryPartAdmin(ImportExportActionModelAdmin):
 admin.site.register(SalaryPart, SalaryPartAdmin)
 
 
-class TopSkillsResource(resources.ModelResource):
+class TopSkills2015Resource(resources.ModelResource):
     class Meta:
-        model = TopSkills
+        model = TopSkills2015
 
 
-class TopSkillsAdmin(ImportExportActionModelAdmin):
-    resource_class = TopSkillsResource
-    list_display = [field.name for field in TopSkills._meta.fields if field.name != 'id']
+class TopSkills2015Admin(ImportExportActionModelAdmin):
+    resource_class = TopSkills2015Resource
+    list_display = [field.name for field in TopSkills2015._meta.fields if field.name != 'id']
 
 
-admin.site.register(TopSkills, TopSkillsAdmin)
+admin.site.register(TopSkills2015, TopSkills2015Admin)
+
+
+class TopSkills2016Resource(resources.ModelResource):
+    class Meta:
+        model = TopSkills2016
+
+
+class TopSkills2016Admin(ImportExportActionModelAdmin):
+    resource_class = TopSkills2016Resource
+    list_display = [field.name for field in TopSkills2016._meta.fields if field.name != 'id']
+
+
+admin.site.register(TopSkills2016, TopSkills2016Admin)
+
+
+class TopSkills2017Resource(resources.ModelResource):
+    class Meta:
+        model = TopSkills2017
+
+
+class TopSkills2017Admin(ImportExportActionModelAdmin):
+    resource_class = TopSkills2017Resource
+    list_display = [field.name for field in TopSkills2017._meta.fields if field.name != 'id']
+
+
+admin.site.register(TopSkills2017, TopSkills2017Admin)
+
+
+class TopSkills2018Resource(resources.ModelResource):
+    class Meta:
+        model = TopSkills2018
+
+
+class TopSkills2018Admin(ImportExportActionModelAdmin):
+    resource_class = TopSkills2018Resource
+    list_display = [field.name for field in TopSkills2018._meta.fields if field.name != 'id']
+
+
+admin.site.register(TopSkills2018, TopSkills2018Admin)
+
+
+class TopSkills2019Resource(resources.ModelResource):
+    class Meta:
+        model = TopSkills2019
+
+
+class TopSkills2019Admin(ImportExportActionModelAdmin):
+    resource_class = TopSkills2019Resource
+    list_display = [field.name for field in TopSkills2019._meta.fields if field.name != 'id']
+
+
+admin.site.register(TopSkills2019, TopSkills2019Admin)
+
+
+class TopSkills2020Resource(resources.ModelResource):
+    class Meta:
+        model = TopSkills2020
+
+
+class TopSkills2020Admin(ImportExportActionModelAdmin):
+    resource_class = TopSkills2020Resource
+    list_display = [field.name for field in TopSkills2020._meta.fields if field.name != 'id']
+
+
+admin.site.register(TopSkills2020, TopSkills2020Admin)
+
+
+class TopSkills2021Resource(resources.ModelResource):
+    class Meta:
+        model = TopSkills2021
+
+
+class TopSkills2021Admin(ImportExportActionModelAdmin):
+    resource_class = TopSkills2021Resource
+    list_display = [field.name for field in TopSkills2021._meta.fields if field.name != 'id']
+
+
+admin.site.register(TopSkills2021, TopSkills2021Admin)
+
+
+class TopSkills2022Resource(resources.ModelResource):
+    class Meta:
+        model = TopSkills2022
+
+
+class TopSkills2022Admin(ImportExportActionModelAdmin):
+    resource_class = TopSkills2022Resource
+    list_display = [field.name for field in TopSkills2022._meta.fields if field.name != 'id']
+
+
+admin.site.register(TopSkills2022, TopSkills2022Admin)
