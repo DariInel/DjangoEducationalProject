@@ -19,6 +19,11 @@
             <a href="http://127.0.0.1:8000/skills/">Навыки</a>
             <a class="active" href="http://127.0.0.1:8000/latest_vacancies/">Последние вакансии</a>
         </div>
+        <script src="{% static "js/hh_request.js" %}"></script>
+        <table id="lastvac_table">
+            <caption>Последние вакансии(выгрузка с hh.ru)</caption>
+            <thread><th>Название вакансии</th><th>Компания</th><th>Оклад</th><th>Название региона</th><th>Дата публикации вакансии</th></thread>
+        </table>
     </main>
     <footer>
         <h1 class="logo">Ахметгареева Дарья Александровна   РИ-210944</h1>
