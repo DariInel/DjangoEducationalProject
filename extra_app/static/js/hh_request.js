@@ -20,27 +20,21 @@ const sendRequest = (method, url) => {
 function createVacancy (id, name, employer_name, salary, area_name, published_at) {
 
     let newVacancy = document.createElement('tr');
-    newVacancy.className = 'vac-item';
     newVacancy.id = id;
 
     let vacancyName = document.createElement('td');
-    vacancyName.className = 'vac-name';
     vacancyName.innerHTML = name;
 
     let vacancyEmployer_name = document.createElement('td');
-    vacancyEmployer_name.className = 'vac-employer_name';
     vacancyEmployer_name.innerHTML = employer_name;
 
     let vacancySalary = document.createElement('td');
-    vacancySalary.className = 'vac-salary';
     vacancySalary.innerHTML = salary;
 
     let vacancyArea_name = document.createElement('td');
-    vacancyArea_name.className = 'vac-area_name';
     vacancyArea_name.innerHTML = area_name;
 
     let vacancyPublished_at = document.createElement('td');
-    vacancyPublished_at.className = 'vac-published_at';
     vacancyPublished_at.innerHTML = published_at;
 
     newVacancy.appendChild(vacancyName);
@@ -49,7 +43,7 @@ function createVacancy (id, name, employer_name, salary, area_name, published_at
     newVacancy.appendChild(vacancyArea_name);
     newVacancy.appendChild(vacancyPublished_at);
 
-    document.getElementById('lastvac_table').appendChild(newVacancy);
+    document.getElementById('latest_vacancies_table').appendChild(newVacancy);
 }
 
 
