@@ -1,5 +1,5 @@
 """
-ASGI config for djangoEducationalProject project.
+ASGI config for educationalProjectConfig project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoEducationalProject.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'educationalProjectConfig.settings')
 
 application = get_asgi_application()
