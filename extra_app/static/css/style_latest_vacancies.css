@@ -10,6 +10,31 @@ html{
   left: 0;
   top: 50px;
 }
+tr:hover td{
+    background: #1f2833;
+}
+th{
+  background-color: #1f2833;
+  text-align: left;
+}
+caption {
+   caption-side: top;
+   text-align: left;
+   padding: 20px 0;
+   font-size: 20px;
+}
+table{
+  text-align: left;
+  font-size: 15px;
+  position: absolute;
+  border-collapse: collapse;
+  height: 600px;
+  width: 1100px;
+  background-color: #0b0c10;
+  left: 300px;
+  color: #45a29e;
+  border-color: #111b24;
+}
 .logo_img{
   position: absolute;
   width: 130px;
